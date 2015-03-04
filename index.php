@@ -259,7 +259,7 @@ if ((isset($_GET['card'])) && ((($v = $_GET["card"])==="0") || (($v = $_GET["car
 	}
 
 print "PLAYER $_SESSION[state]'s TURN<br/>LAST MOVE:<table border=0 cellspacing=2 cellpadding=2><tr>";
-for ($i=0;$i<count($_SESSION["lastmove"]);$i++) print "<td style=\"border: 2px solid white;\"><img src=cards/".$_SESSION["lastmove"][$i].".gif></td>";
+for ($i=0;$i<count($_SESSION["lastmove"]);$i++) print "<td style=\"border: 2px solid white;\"><img src=img/".$_SESSION["lastmove"][$i].".gif></td>";
 print "</tr></table><br/>";
 
 for($p=0;$p<$_SESSION["players"];$p++) {
@@ -268,9 +268,9 @@ for($p=0;$p<$_SESSION["players"];$p++) {
 
 	if (($_SESSION["player"][$p]->human) && ($_SESSION["state"]==$p) && (!isset($won)))
 		for ($i=0;$i<count($_SESSION["player"][$p]->hand);$i++)
-			print "<td style=\"border: ".(($_SESSION["player"][$p]->cards_selected[$i])?$b="2px solid blue;":$b="2px solid white;")."\"><a href=\"?card=$i\"><img src=\"cards/".$_SESSION["player"][$p]->hand[$i].".gif\" border=\"0\"></a></td>\n";
+			print "<td style=\"border: ".(($_SESSION["player"][$p]->cards_selected[$i])?$b="2px solid blue;":$b="2px solid white;")."\"><a href=\"?card=$i\"><img src=\"img/".$_SESSION["player"][$p]->hand[$i].".gif\" border=\"0\"></a></td>\n";
 	else
-		for ($i=0;$i<count($_SESSION["player"][$p]->hand);$i++) print "<td style=\"border: 2px solid white;\"><img src=cards/back.gif></td>";
+		for ($i=0;$i<count($_SESSION["player"][$p]->hand);$i++) print "<td style=\"border: 2px solid white;\"><img src=img/back.gif></td>";
 
 	print "</tr></table>\n";
 }

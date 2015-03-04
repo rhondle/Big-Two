@@ -2,7 +2,8 @@
 PHP version of the Big Two card game
 Original Release: December, 2002
 
-Big Two, also known as Deuces and a plethora of other names (see http://en.wikipedia.org/wiki/Big_Two) is a fun card game that I enjoyed playing with my friend Alastair during high school. In 2002 during a visit we decided to start on writing a web-based implementation of this game.
+Big Two, also known as Deuces and a plethora of other names (see http://en.wikipedia.org/wiki/Big_Two) is a fun card game that I enjoyed playing with my friend Alastair during high school.
+In 2002 during a visit we decided to start on writing a web-based implementation of this game.
 
 Although we developed a functional game, we never got any further than that.
 
